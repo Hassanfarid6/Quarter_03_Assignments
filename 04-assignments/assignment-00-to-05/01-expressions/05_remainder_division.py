@@ -9,7 +9,6 @@ def main():
     print("The result of this division is " + str(quotient) + " with a remainder of " + str(remainder))
 
 
-# There is no need to edit code beyond this point
 
 if __name__ == '__main__':
     main()

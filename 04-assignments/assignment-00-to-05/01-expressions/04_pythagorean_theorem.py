@@ -1,5 +1,7 @@
 import math
 
+# Pythagorean theorem!
+# BC ** 2 = AB ** 2 + AC ** 2
 def pythagorean_theorem(AB, AC):
     return math.sqrt(AB**2 + AC**2)
 
@@ -9,7 +11,6 @@ def main():
     hypotenuse = pythagorean_theorem(AB, AC)
     print(AB ** 2)
     print(AC ** 2)
-    print(math.sqrt(50))
     print("The length of the hypotenuse is:", hypotenuse)
 
 
