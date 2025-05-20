@@ -3,9 +3,8 @@
 # the price, @price.setter to update it, and @price.deleter to delete it.
 
 
-
 class  Product:
-    def __init__(self, price) -> None:
+    def __init__(self, price):
         self._price = price
 
     @property
@@ -23,21 +22,10 @@ class  Product:
         del self._price
         print("price deleted")
 
+
 res = Product(10)
+print(res.price)  # output: 10 
+res.price = 15
+print(res.price)   # output: 15
 
-print(res.price)
-
-Product.price = 15
-
-print(Product.price)
-
-dels = Product.price
-
-# print(dels)
-
-
-
-
-
-
-
+del res.price     # price deleted
