@@ -8,6 +8,7 @@
 class TemperatureConverter:
 
 
+ # This is a decorator that tells Python to use this method without creating an instance of the class
     @staticmethod
     def celsius_to_fahrenheit(c):
 
