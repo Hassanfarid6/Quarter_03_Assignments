@@ -7,7 +7,7 @@
 from abc import ABC, abstractmethod
 
 class Order():
-    def init(self, order_id : str, price : float, weight: float):
+    def __init__(self, order_id : str, price : float, weight: float):
         self.order_id = order_id
         self.price = price
         self.weight = weight
@@ -21,6 +21,7 @@ class IPaymentProcessor(ABC):
     @abstractmethod
     def pay(self, amount:float) -> dict:
         pass
+#         return {"status": f"paid {amount} using stripe"}
 class IRefundProcessor(ABC):
     @abstractmethod
     def refund(self, amount:float) -> dict:
@@ -48,7 +49,7 @@ class BankPaymentProcessor(IPaymentProcessor):
 
 
 class OrderCheckout():
-    def init(self, order: Order, payment: IPaymentProcessor):
+    def __init__(self, order: Order, payment: IPaymentProcessor):
         self.order = order
         self.payment = payment
     def checkout(self , order_id:str):
