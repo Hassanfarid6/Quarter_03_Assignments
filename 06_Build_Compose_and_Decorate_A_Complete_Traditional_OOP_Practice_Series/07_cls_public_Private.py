@@ -22,10 +22,11 @@ res = Employee("ali", 900000, "hasan")
 print(res.name)  # Access public variable
 print(res._salary)  # Access protected variable
 # This will fail because __ssn is private
-print(res.__ssn)    # can not Access dirtectly
+# print(res.__ssn)    # can not Access dirtectly
 # Trying to access the private variable directly will cause an AttributeError
 # To access private variable, use name mangling: res._Employee__ssn (not recommended)
-# Example: print(res._Employee__ssn)  # Output: hasan
+# Example: 
+print(res._Employee__ssn)  # Output: hasan
 
 
 res.display()

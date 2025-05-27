@@ -5,8 +5,9 @@
 
 from abc import ABC, abstractmethod
 
+# Polymorphism is a concept where different classes can use the same method
+# name but behave differently.
 class Shape(ABC):
-
     @abstractmethod
     def area(self) -> None:
         pass

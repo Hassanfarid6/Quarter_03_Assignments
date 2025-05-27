@@ -23,3 +23,7 @@ class Teacher(Person):
         # Call the Person class's display method using super()
         super().display()  # Prints the name from Person class
         print(f"Subject: {self.subject}")  # Print the teacher's subject
+
+res = Teacher("Ali", "Math")
+res.display()
+
