@@ -3,8 +3,8 @@
 # before a function executes. Apply it to a function say_hello().
 
 
+# This is a decorator that prints a message before a function is called
 def log_function_call(func):
-
     def wrap():
         print("Function is being called")
         func()
