@@ -17,6 +17,7 @@ def check_age(age):
 
 
 try:
-    check_age(17)
+    # check_age(10)  # Minimum age is 18. You entered: 10 Age must be 18 or older
+    check_age(18)  # Access granted!!
 except InvalidAgeError as e:
     print(e)

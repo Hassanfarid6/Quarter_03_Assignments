@@ -4,7 +4,7 @@
 
 
 
-from typing import Any
+# from typing import Any
 
 
 class Multiplier:
@@ -13,10 +13,14 @@ class Multiplier:
 
     def __call__(self, x):
         return x * self.factor
-    
-multiplier = Multiplier(3)
-print(callable(multiplier))
 
-print(multiplier(4))
+# This creates a multiplier object with a factor of 3
+multiplier = Multiplier(3)
+
+# This checks if the multiplier object is callable
+print(callable(multiplier))  # True
+
+# This calls the multiplier object with an input of 4
+# print(multiplier(4))  # 12
 res = multiplier(5)
-print(res)
+print(res)  # 15
