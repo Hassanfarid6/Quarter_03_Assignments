@@ -24,3 +24,5 @@ This is a collection of my Python assignments for Quarter 3. I’m a beginner le
 ## How to Run It
 1. **Get Python**: Make sure Python is on your computer (I use version 3.9 or higher).
 2. **Install Tools**: Open your terminal and type:
+
+https://github.com/panaversity/learn-modern-ai-python/tree/main/CLASS_PROJECTS
