@@ -8,7 +8,6 @@ This is a collection of my Python assignments for Quarter 3. I’m a beginner le
    **Basic Python Stuff**  
    - Things like lists, dictionaries, and loops to get started with coding.
 
-
    **Chatbot Project**  
    - A simple chatbot that talks back to you (like an echo).
 
